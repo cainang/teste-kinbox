@@ -83,8 +83,11 @@ async function sendCliente() {
     try {
         Kinbox.loading(true)
         let data = await fetch("https://meowfacts.herokuapp.com/?count=3")
-        let response = data.json();
+        let response = await data.json();
         console.log(response);
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('auth_secret');
+        console.log(myParam);
         Kinbox.loading(false)
         Kinbox.toast("success", "Cliente adicionado com sucesso!")
     } catch (e) {
