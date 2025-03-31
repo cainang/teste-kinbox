@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="https://andrody.github.io/kinbox-lib/kinboxjs.js"
+        ></script>
+        <script type="text/javascript" src="plugin.js"></script>
+    </head>
+    <body>
+        <p>
+            <button onClick="loading()">Loading</button>
+        </p>
+        <p>
+            <button onClick="dialog()">Dialog</button>
+        </p>
+        <p>
+            <button onClick="toast()">Toast</button>
+        </p>
+        <p>
+            <button onClick="changeCustomField()">Alterar campo (idade)</button>
+        </p>
+        <p>
+            <button onClick="changeSessionCustomField()">Alterar campo de sessão (idade_sessao)</button>
+        </p>
+        <p>
+            <button onClick="assign()">Atribuir a um operador</button>
+        </p>
+        <p>
+            <button onClick="moveToGroup()">Mover para um grupo</button>
+        </p>
+        <p>
+            <button onClick="addTag()">Adicionar uma tag</button>
+        </p>
+        <p>
+            <button onClick="removeTag()">Remover uma tag</button>
+        </p>
+        <p>
+            <button onClick="getWorkspaceInfo()">Obter info do ambiente</button>
+        </p>
+        <p>
+            <button onClick="sendForm('modal')">Abrir formulário em modal</button>
+        </p>
+        <p>
+            <button onClick="sendForm('drawer')">Abrir formulário em painel</button>
+        </p>
+        <p>
+            <button onClick="getFacts()">Obter fatos sobre gatos</button>
+        </p>
+        <p >
+            <ul id="facts">
+
+            </ul>
+        </p>
+    </body>
+</html>
