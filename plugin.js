@@ -89,6 +89,10 @@ async function sendCliente() {
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('auth_secret');
         console.log(myParam);
+        
+        console.log("numero", conversation.contact.phone);
+        console.log("origem", conversation.contact.origem);
+        
         Kinbox.loading(false)
         Kinbox.toast("success", "Cliente adicionado com sucesso!")
     } catch (e) {
