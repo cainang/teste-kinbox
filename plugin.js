@@ -1,7 +1,7 @@
 /********************
  * Variáveis globais
  ********************/
-var conversation;
+var conversation = null;
 var workspaceInfo = null;
 
 /********************
@@ -81,6 +81,7 @@ async function criarCliente() {
 
 async function sendCliente() {
     try {
+        // pegar informações de conversation - contact - customFields
         Kinbox.loading(true)
         let data = await fetch("https://meowfacts.herokuapp.com/?count=3")
         let response = await data.json();
